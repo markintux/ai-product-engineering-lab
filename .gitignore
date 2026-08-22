@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# IDEs
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# Build / coverage
+dist/
+build/
+coverage/
+
+# TensorFlow generated model artifacts
+*.bin
+model.json
