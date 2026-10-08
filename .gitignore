@@ -26,3 +26,5 @@ coverage/
 # TensorFlow generated model artifacts
 *.bin
 model.json
+# Keep env templates
+!.env.example
