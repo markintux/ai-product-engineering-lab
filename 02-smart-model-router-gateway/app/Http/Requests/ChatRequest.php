@@ -29,7 +29,8 @@ class ChatRequest extends FormRequest
     public function rules(): array
     {
         return [
-            // Mesma regra do projeto em Node: texto com pelo menos 5 caracteres.
+            // Pelo menos 5 caracteres: perguntas curtas demais não valem
+            // uma chamada ao OpenRouter.
             'question' => ['required', 'string', 'min:5'],
 
             // Opcional: permite testar outro critério sem mexer no .env.

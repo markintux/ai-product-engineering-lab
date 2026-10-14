@@ -5,8 +5,8 @@
 | POST /api/chat — teste "ao vivo"
 |--------------------------------------------------------------------------
 |
-| Equivalente ao teste e2e do projeto em Node: chama o OpenRouter de
-| verdade. Fica fora da suíte padrão (grupo "live" excluído no phpunit.xml)
+| Chama o OpenRouter de verdade para ver qual modelo ele escolhe em cada
+| critério. Fica fora da suíte padrão (grupo "live" excluído no phpunit.xml)
 | porque depende de rede, de chave válida e de quais modelos gratuitos
 | estão no ar naquele dia.
 |

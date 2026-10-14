@@ -3,8 +3,6 @@
 Gateway HTTP que recebe uma pergunta e deixa o **OpenRouter escolher qual modelo responde**,
 a partir de uma lista de candidatos e de um critério: **preço**, **throughput** ou **latência**.
 
-Porte para Laravel do [exemplo em Node.js do curso](https://github.com/unipds-engenharia-de-ia-aplicada/engenharia-de-software-com-ia-aplicada/tree/main/modulo02-integracao-apis-llms/01-smart-model-router-gateway).
-
 **Stack:** Laravel 13 · [Laravel AI SDK](https://laravel.com/docs/ai-sdk) · Laravel Boost · Sail (Docker) · Pest
 
 ---
@@ -102,7 +100,7 @@ Também dá pra chamar direto no tinker:
   preço decidir de verdade, inclua modelos pagos com preços diferentes.
 - **Resposta vazia (`"content": ""`)?** Os modelos de raciocínio "pensam" antes de responder,
   e esses tokens contam no `max_tokens`. Se o limite for baixo, o raciocínio gasta tudo e não
-  sobra nada para a resposta. Por isso o padrão é `1000`, e não os `100` da versão Node.
+  sobra nada para a resposta. Por isso o padrão é `1000`.
 
 ## Testes
 
@@ -114,14 +112,3 @@ Também dá pra chamar direto no tinker:
 Os testes offline verificam o que **seria enviado** ao OpenRouter (modelos, critério,
 temperatura...) e como a resposta é devolvida. O teste `live` mostra qual modelo venceu
 em cada critério.
-
-## Diferenças em relação à versão Node
-
-| Node (curso) | Laravel |
-|---|---|
-| `@openrouter/sdk` | Laravel AI SDK (`laravel/ai`), provider `openrouter` |
-| `config.ts` | `config/model-router.php` + `.env` |
-| `OpenRouterService` | `ModelRouterAgent` (campos extras via `HasProviderOptions`) |
-| Fastify + JSON schema | Rota + `ChatRequest` (FormRequest) + controller de ação única |
-| Critério fixo no config | Critério no config **ou** por requisição (`sort`) |
-| Testes e2e contra a API real | Testes offline + grupo `live` opcional |
