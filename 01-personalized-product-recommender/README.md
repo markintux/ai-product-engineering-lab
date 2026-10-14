@@ -1,15 +1,26 @@
-# E-commerce Recommendation System
+# Personalized Pub Product Recommender
 
-A web application that displays user profiles and product listings, with the ability to track user purchases for future machine learning recommendations using TensorFlow.js.
+A web application for a pub that displays customer profiles and the menu (beers, burgers,
+sides, appetizers and drinks), with the ability to track customer purchases for future
+machine learning recommendations using TensorFlow.js.
 
 ## Project Structure
 
 - `index.html` - Main HTML file for the application
-- `index.js` - Entry point for the application
-- `view/` - Contains classes for managing the DOM and templates
-- `controller/` - Contains controllers to connect views and services
-- `service/` - Contains business logic for data handling
-- `data/` - Contains JSON files with user and product data
+- `src/index.js` - Entry point for the application
+- `src/view/` - Contains classes for managing the DOM and templates
+- `src/controller/` - Contains controllers to connect views and services
+- `src/service/` - Contains business logic for data handling
+- `src/workers/` - Web worker where the recommendation model is trained
+- `data/` - JSON files with customer and product data
+
+## Data
+
+| File | Content |
+|---|---|
+| `data/products_pub.json` | Pub menu: 10 products with `category`, `price` and `color` |
+| `data/users_pub.json` | 5 customers with their purchase history (items from the pub menu) |
+| `data/products.json`, `data/users.json` | Original e-commerce sample data from the template (not loaded) |
 
 ## Setup and Run
 
@@ -23,17 +34,17 @@ npm install
 npm start
 ```
 
-3. Open your browser and navigate to `http://localhost:8080`
+3. Open your browser and navigate to `http://localhost:3000`
 
 ## Features
 
-- User profile selection with details display
+- Customer profile selection with details display
 - Past purchase history display
-- Product listing with "Buy Now" functionality
+- Menu listing with "Buy Now" functionality
 - Purchase tracking using sessionStorage
 
 ## Future Enhancements
 
-- TensorFlow.js-based recommendation engine
-- User similarity analysis
+- TensorFlow.js-based recommendation engine (the training worker is still a stub)
+- Customer similarity analysis
 - Product recommendation based on purchase history

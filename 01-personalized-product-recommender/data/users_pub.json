@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Ana Lima",
+        "age": 25,
+        "purchases": [
+            {
+                "id": 1,
+                "name": "IPA",
+                "category": "beer",
+                "price": 18.00,
+                "color": "amber"
+            },
+            {
+                "id": 7,
+                "name": "Onion Rings",
+                "category": "side",
+                "price": 24.00,
+                "color": "golden"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Bruno Ferreira",
+        "age": 27,
+        "purchases": [
+            {
+                "id": 3,
+                "name": "Stout",
+                "category": "beer",
+                "price": 20.00,
+                "color": "dark"
+            },
+            {
+                "id": 5,
+                "name": "Bacon Burger",
+                "category": "burger",
+                "price": 38.00,
+                "color": "brown"
+            },
+            {
+                "id": 6,
+                "name": "French Fries",
+                "category": "side",
+                "price": 22.00,
+                "color": "golden"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Camila Souza",
+        "age": 30,
+        "purchases": [
+            {
+                "id": 10,
+                "name": "Orange Juice",
+                "category": "juice",
+                "price": 10.00,
+                "color": "orange"
+            },
+            {
+                "id": 4,
+                "name": "Classic Burger",
+                "category": "burger",
+                "price": 32.00,
+                "color": "brown"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Diego Almeida",
+        "age": 22,
+        "purchases": [
+            {
+                "id": 2,
+                "name": "Pilsen",
+                "category": "beer",
+                "price": 14.00,
+                "color": "golden"
+            },
+            {
+                "id": 8,
+                "name": "Chicken Wings",
+                "category": "appetizer",
+                "price": 34.00,
+                "color": "red"
+            },
+            {
+                "id": 6,
+                "name": "French Fries",
+                "category": "side",
+                "price": 22.00,
+                "color": "golden"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Eduarda Nunes",
+        "age": 28,
+        "purchases": [
+            {
+                "id": 9,
+                "name": "Cola",
+                "category": "soft-drink",
+                "price": 8.00,
+                "color": "dark"
+            },
+            {
+                "id": 4,
+                "name": "Classic Burger",
+                "category": "burger",
+                "price": 32.00,
+                "color": "brown"
+            },
+            {
+                "id": 7,
+                "name": "Onion Rings",
+                "category": "side",
+                "price": 24.00,
+                "color": "golden"
+            }
+        ]
+    }
+]

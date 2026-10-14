@@ -1,6 +1,6 @@
 export class ProductService {
     async getProducts() {
-        const response = await fetch('./data/products.json');
+        const response = await fetch('./data/products_pub.json');
         return await response.json();
     }
 
